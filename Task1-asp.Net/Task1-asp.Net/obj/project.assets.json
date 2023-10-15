@@ -943,11 +943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
+      "projectUniqueName": "C:\\Users\\vcebr\\Code Academy\\Back-End\\Tasks\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
       "projectName": "Task1-asp.Net",
-      "projectPath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
+      "projectPath": "C:\\Users\\vcebr\\Code Academy\\Back-End\\Tasks\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
       "packagesPath": "C:\\Users\\vcebr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\obj\\",
+      "outputPath": "C:\\Users\\vcebr\\Code Academy\\Back-End\\Tasks\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

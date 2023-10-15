@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cj2vx3AUs5hIJ8epCcXPcvnlV4M7LjiONfIpdxZqsC63DNinlzOPRJeM79nzq04hxcv7UiYe/QPrLsfGjt+B3A==",
+  "dgSpecHash": "TVRZZ2EZCTyu+tVnc3IJW5LP8tWNwWa1WQ2Syxaf3TGvm+YuaYV5tsB4n3pq1nnahYyPjYbuxTIa5AV1TvcY7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vcebr\\OneDrive\\Desktop\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
+  "projectFilePath": "C:\\Users\\vcebr\\Code Academy\\Back-End\\Tasks\\Task1.AspNet\\Task1-asp.Net\\Task1-asp.Net\\Task1-asp.Net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vcebr\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.23\\microsoft.aspnetcore.mvc.razor.extensions.6.0.23.nupkg.sha512",
     "C:\\Users\\vcebr\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.23\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.23.nupkg.sha512",
