@@ -1,0 +1,37 @@
+﻿@using Task1_asp.Net.ViewModel;
+@model AddViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Add New Product</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add New Product to Slider</h2>
+        <form asp-route="slider-add" method="POST">
+            <div class="form-group">
+                <label for="productNameSlider">Product Name:</label>
+                <input asp-for="Name" type="text" class="form-control" id="productNameSlider" placeholder="Enter product name">
+            </div>
+            <div class="form-group">
+                <label for="productDescriptionSlider">Description:</label>
+                <input asp-for="Description" type="text" class="form-control" id="productDescriptionSlider" placeholder="Enter Description">
+            </div>
+            <div class="form-group">
+                <label for="productSale">Sale percent:</label>
+                <input asp-for="Sale" type="text" class="form-control" id="productSale" placeholder="Enter Sale Percent">
+            </div>
+            <div class="form-group">
+                <label for="productOrderCount">Order by Count:</label>
+                <input asp-for="OrderCount" type="text" class="form-control" id="productOrderCount" placeholder="Enter Order count">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+
+</body>
+</html>
