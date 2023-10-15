@@ -11,7 +11,8 @@ namespace Task1_asp.Net.Admin
         [HttpGet("list", Name ="product-slider")]
         public IActionResult sliderList()
         {
-            var product = DbContext._sliderProduct.Select( s => new SliderContent(s.Id, s.Name,s.Description,s.OrderCount,s.Sale)).ToList().OrderBy( s => s.OrderCount ).ToList();
+            var product = DbContext._sliderProduct.Select( s => new SliderContent(s.Id, s.Name,s.Description,s.OrderCount,s.Sale, s.ButtonLink)).ToList().
+                                                   OrderBy( s => s.OrderCount ).ToList();
             
 
             return View(product);
@@ -67,6 +68,7 @@ namespace Task1_asp.Net.Admin
             product.Description = model.Description;
             product.Sale = model.Sale;
             product.OrderCount = model.OrderCount;
+            product.ButtonLink = model.ButtonLink;
 
             return RedirectToRoute("product-slider");
         }

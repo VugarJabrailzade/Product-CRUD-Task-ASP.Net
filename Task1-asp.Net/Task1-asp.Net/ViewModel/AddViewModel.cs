@@ -16,6 +16,7 @@
         public int OrderCount { get; set; }
         public int Sale { get; set; }
         public DateTime Created { get; set; }
+        public string ButtonLink { get; set; }
 
     }
 }

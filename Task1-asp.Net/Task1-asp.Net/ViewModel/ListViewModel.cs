@@ -3,12 +3,13 @@
     public class ListViewModel
     {
 
-        public ListViewModel(int id,string name, string description, decimal price)
+        public ListViewModel(int id,string name, string description, decimal price, DateTime creationDate)
         {
             Id = id;
             Name = name;
             Description = description;
             Price = price;
+            CreationDate = creationDate;
         }
 
         public ListViewModel(int id ,string name, string description, string size, string color, decimal price, DateTime creationDate)
@@ -20,7 +21,6 @@
             Color = color;
             Price = price;
             CreationDate = creationDate;
-
         }
        
         

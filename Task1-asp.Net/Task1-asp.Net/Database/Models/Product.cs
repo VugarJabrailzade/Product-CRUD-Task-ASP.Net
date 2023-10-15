@@ -10,7 +10,7 @@
 
         }
 
-        public Product(string name, string description, string color, string size, decimal price)
+        public Product(string name, string description, string color, string size, decimal price,DateTime creationDate)
         {
             Id = ++DbContext._productId;
             Name = name;
@@ -18,7 +18,7 @@
             Color = color;
             Size = size;
             Price = price;
-            
+            CreationDate = creationDate;
         }
 
         public int Id { get; set; }
@@ -28,6 +28,6 @@
         public string Size { get; set; }
         public decimal Price { get; set; }
         
-        public DateTime CreatingDate { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }

@@ -12,13 +12,14 @@ namespace Task1_asp.Net.ViewModel
             Sale = sale;
         }
 
-        public SliderContent(int id, string name, string description, int orderCount, int sale)
+        public SliderContent(int id, string name, string description, int orderCount, int sale, string buttonLink)
         {
             Id = id;
             Name = name;
             Description = description;
             OrderCount = orderCount;
             Sale = sale;
+            ButtonLink = buttonLink;
         }
 
         public int Id { get; set; }
@@ -27,5 +28,6 @@ namespace Task1_asp.Net.ViewModel
         public string Name { get; set; }
         public string Description { get; set; }
         public int Sale { get; set; }
+        public string ButtonLink { get; set; }
     }
 }

@@ -12,8 +12,9 @@ namespace Task1_asp.Net.Admin
         [HttpGet("list", Name = "product-list")]
         public IActionResult List()
         {
-            var products = DbContext._product.Select(x => new ListViewModel(x.Id,x.Name, x.Description, x.Size,  x.Color, x.Price,x.CreatingDate)).ToList().
-                                              OrderBy(x => x.CreationDate).ToList();
+            var products = DbContext._product.Select(x => new ListViewModel(x.Id, x.Name, x.Description, x.Size, x.Color, x.Price, x.CreationDate)).ToList().
+                                             OrderBy(x => x.CreationDate).ToList();
+                                              
             
             return View(products);
         }
@@ -35,7 +36,7 @@ namespace Task1_asp.Net.Admin
                 Size = model.Size,
                 Color = model.Color,
                 Price = model.Price,
-                CreatingDate = model.Created,
+                CreationDate = model.Created,
                            
             };
             

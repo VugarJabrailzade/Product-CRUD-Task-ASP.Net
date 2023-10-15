@@ -20,6 +20,7 @@
                     <th>Name</th>
                     <th>Description</th>
                     <th>Sale</th>
+                    <th>Button Link</th>
                     <th>Order count</th>
                     <th>Action</th>
                     
@@ -36,6 +37,7 @@
                         <td>@product.Name</td>
                         <td>@product.Description</td>
                         <td>@product.Sale%</td>
+                        <td>@product.ButtonLink</td>
                         <td>@product.OrderCount</td>
                         <td>
                             <a asp-route="edit-slider" asp-route-id="@product.Id" class="btn btn-warning">Edit</a>

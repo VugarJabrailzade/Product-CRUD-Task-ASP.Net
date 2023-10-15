@@ -8,5 +8,6 @@
         public string Description { get; set; }
         public int Sale {  get; set; }
         public int OrderCount { get; set; }
+        public string ButtonLink {  get; set; }
     }
 }

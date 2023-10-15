@@ -9,13 +9,14 @@ namespace Task1_asp.Net.Database.Models
             Id = ++DbContext._sliderproductId;
         }
 
-        public sliderProduct(string name, string description, int orderCount, int sale)
+        public sliderProduct(string name, string description, int orderCount, int sale, string buttonLink)
         {
             Id = ++DbContext._sliderproductId;
             Name = name;
             Description = description;
             OrderCount = orderCount;
             Sale = sale;
+            ButtonLink = buttonLink;
         }
 
         public int Id { get; set; }
@@ -23,5 +24,6 @@ namespace Task1_asp.Net.Database.Models
         public string Description { get; set; }
         public int OrderCount { get; set; }
         public int Sale {  get; set; }
+        public string ButtonLink { get; set; }
     }
 }
