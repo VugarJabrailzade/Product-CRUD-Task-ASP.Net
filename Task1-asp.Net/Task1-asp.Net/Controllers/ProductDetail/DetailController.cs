@@ -10,7 +10,7 @@ namespace Task1_asp.Net.Controllers.ProductDetail
         [HttpGet("list", Name ="content-list")]
         public IActionResult Index(int id)
         {
-            var product = DbContext._product.FirstOrDefault(x => x.Id == id);
+            var product = DbContextCustom._product.FirstOrDefault(x => x.Id == id);
             if (product == null)
             {
                 return NotFound();

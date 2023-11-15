@@ -5,14 +5,14 @@
 
         public Product()
         {
-            Id = ++DbContext._productId;
+            Id = ++DbContextCustom._productId;
             
 
         }
 
         public Product(string name, string description, string color, string size, decimal price,DateTime creationDate)
         {
-            Id = ++DbContext._productId;
+            Id = ++DbContextCustom._productId;
             Name = name;
             Description = description;
             Color = color;

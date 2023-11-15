@@ -1,0 +1,36 @@
+﻿@using Task1_asp.Net.ViewModel;
+@model AddNavbarViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Add New Product</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add New Product</h2>
+        <form asp-route="navbar-add" method="POST">
+            <div class="form-group">
+                <label for="Title">Title:</label>
+                <input asp-for="Title" type="text" class="form-control" id="productName" placeholder="Enter Title">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="OrderCount">Order Count:</label>
+                <input asp-for="OrderCount" type="text" class="form-control" id="productDescription" placeholder="Enter Order Count">
+                <span asp-validation-for="OrderCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="IsHeader">IsHeader:</label>
+                <input asp-for="IsHeader" type="text" class="form-control" id="productColor" placeholder="Enter IsHeader or not">
+                <span asp-validation-for="IsHeader" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+    </div>
+
+</body>
+</html>

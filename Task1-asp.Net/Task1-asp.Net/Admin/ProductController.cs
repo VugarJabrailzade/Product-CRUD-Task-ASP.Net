@@ -12,7 +12,7 @@ namespace Task1_asp.Net.Admin
         [HttpGet("list", Name = "product-list")]
         public IActionResult List()
         {
-            var products = DbContext._product.Select(x => new ListViewModel(x.Id, x.Name, x.Description, x.Size, x.Color, x.Price, x.CreationDate)).ToList().
+            var products = DbContextCustom._product.Select(x => new ListViewModel(x.Id, x.Name, x.Description, x.Size, x.Color, x.Price, x.CreationDate)).ToList().
                                              OrderBy(x => x.CreationDate).ToList();
                                               
             
@@ -40,7 +40,7 @@ namespace Task1_asp.Net.Admin
                            
             };
             
-            DbContext._product.Add(product);
+            DbContextCustom._product.Add(product);
 
             return RedirectToRoute("product-list");
 
@@ -49,7 +49,7 @@ namespace Task1_asp.Net.Admin
         [HttpGet("edit", Name ="product-edit")]
         public IActionResult EditProduct(int id)
         {
-            var product = DbContext._product.FirstOrDefault(x => x.Id == id);
+            var product = DbContextCustom._product.FirstOrDefault(x => x.Id == id);
             if (product == null)
             {
                 return NotFound();
@@ -61,7 +61,7 @@ namespace Task1_asp.Net.Admin
         [HttpPost("edit", Name = "product-edit")]
         public IActionResult EditProduct(ProductUpdateViewModel model)
         {
-            var product = DbContext._product.FirstOrDefault(x => x.Id == model.Id);
+            var product = DbContextCustom._product.FirstOrDefault(x => x.Id == model.Id);
             if (product == null)
             {
                 return NotFound();
@@ -80,13 +80,13 @@ namespace Task1_asp.Net.Admin
         [HttpGet("delete",Name = "product-delete")]
         public IActionResult DeleteProduct(int id)
         {
-            var product = DbContext._product.FirstOrDefault(x => x.Id == id);
+            var product = DbContextCustom._product.FirstOrDefault(x => x.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
 
-            DbContext._product.Remove(product);
+            DbContextCustom._product.Remove(product);
             return RedirectToRoute("product-list");
 
         }

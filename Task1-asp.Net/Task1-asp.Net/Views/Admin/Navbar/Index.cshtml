@@ -1,0 +1,52 @@
+﻿@using Task1_asp.Net.ViewModel;
+@model List<NavbarViewModel>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Products Table</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Products</h2>
+        <a asp-route="navbar-add" class="btn btn-success">Add New Navbar </a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Order Count</th>
+                    <th>Is Header</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int rowCount = 1;
+                }
+                @foreach (var navbar in Model)
+                {
+                    <tr>
+                        <td>@rowCount</td>
+                        <td>@navbar.Title</td>
+                        <td>@navbar.OrderCount</td>
+                        <td>@navbar.IsHeader</td>
+                        <td>
+                            <a asp-route="navbar-edit" asp-route-id="@navbar.Id" class="btn btn-warning">Edit</a>
+                            <a asp-route="navbar-delete" asp-route-id="@navbar.Id" class="btn btn-danger">Remove</a>
+                        </td>
+                    </tr>
+
+                    rowCount++;
+                }
+                <!-- Add more rows for additional products -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

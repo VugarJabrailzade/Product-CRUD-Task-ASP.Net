@@ -6,12 +6,12 @@ namespace Task1_asp.Net.Database.Models
     {
         public sliderProduct()
         {
-            Id = ++DbContext._sliderproductId;
+            Id = ++DbContextCustom._sliderproductId;
         }
 
         public sliderProduct(string name, string description, int orderCount, int sale, string buttonLink)
         {
-            Id = ++DbContext._sliderproductId;
+            Id = ++DbContextCustom._sliderproductId;
             Name = name;
             Description = description;
             OrderCount = orderCount;

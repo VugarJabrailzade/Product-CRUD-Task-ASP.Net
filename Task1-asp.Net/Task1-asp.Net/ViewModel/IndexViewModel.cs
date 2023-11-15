@@ -5,7 +5,7 @@
         public IndexViewModel() { }
 
         public List<ListViewModel> ViewModels { get; set; }
-        public List<SliderContent> sliderContentDetail { get; set; }
-        
+        public List<SliderContent> sliderContentDetail { get; set; }     
+        public List<NavbarViewModel> navbarViewModel { get; set; }
     }
 }

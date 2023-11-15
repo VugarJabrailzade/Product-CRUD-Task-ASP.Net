@@ -2,7 +2,7 @@
 
 namespace Task1_asp.Net.Database
 {
-    public class DbContext
+    public class DbContextCustom
     {
         public static int _productId;
         public static int _sliderproductId;
